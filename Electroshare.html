@@ -6,123 +6,119 @@
     <title>Electroshare</title>
     <link rel="stylesheet" href="Electroshare.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     
-
     <header>
+        
         <div class="poster">
+            
             <div class="box">
                 <div class="sidebar1">
                     <div class="s1"></div>
                 </div>
+                
                 <div class="sidebar2">
                     <div class="s2"></div>
-        
                 </div>
-                <div class="sidebar3">
+                
+                <div class="middle_cont"></div>
+                
+                 <div class="sidebar3">
                     <div class="s3"></div>
-        
                 </div>
                 <div class="sidebar4">
                     <div class="s4"></div>
-        
-                </div>
+                </div> 
             </div>
 
-             <div class="poster_name_container">
-                 <div class="poster_name">
-                     <span>ELECTROSHARE</span>
-                    </div>
-                </div>
+            <div class="poster_name">
+                <span>ELECTROSHARE</span>
             </div>
-        </header>
-        
-
+        </div>
+    </header>
     
     <nav>
         <div class="navigation">
-            <a id="menu_icon_link" href="#" style="text-decoration: none;">
-                <div class="menu_icon">
+                <div class="menu">
                     <input type="checkbox" name="checkbox" id="Show_sidebar">
-                    <div class="menu_icon_img">
-                        <label for="Show_sidebar">
-                            <!-- <img src="./all web image stock/menu-icon-png-3-lines-5.jpg" alt=""> -->
-                        </label> 
+                    <label for="Show_sidebar">
+                        <i id="menu_icon" class="fa fa-bars"></i>
+                        <span id="menu_icon_lable">All</span>
+                    </label>
+                    
+                    <div class="sidebar_section">
+                        <div class="hide_sidebar">
+                             <label for="Show_sidebar"> &times;</label>
+                        </div>
+                        <div id="Menu_Sidebar">
+                           <h1 id="Menu_Sidebar_header">Electroshare</h1>
+                           <ul>
+                               <a href="http://127.0.0.1:5500/MiniProject/Electroshare.html">
+                               <li id="Home_list_item"> Home </li>
+                               </a>
+                               <a href="">
+                               <li id="Profile_list_item"> Profile </li>
+                               </a>
+                               <a href="">
+                               <li id="Seller_list_item"> Become Seller </li>
+                               </a>
+                               <a href="">
+                               <li id="Cart_list_item"> Cart </li>
+                               </a>
+                               <a href="">
+                               <li id="Orders_list_item"> Orders </li>
+                               </a>
+                            </ul>
+                       </div> 
+                
                     </div>
-                    <div class="Menu_Sidebar">
-                            <h1 id="Menu_Sidebar_header">Electroshare</h1>
-                            <ul>
-                                <a href="">
-                                <li id="Home_list_item"> Home </li>
-                                </a>
-                                <a href="">
-                                <li id="Profile_list_item"> Profile </li>
-                                </a>
-                                <a href="">
-                                <li id="Seller_list_item"> Become Seller </li>
-                                </a>
-                                <a href="">
-                                <li id="Cart_list_item"> Cart </li>
-                                </a>
-                                <a href="">
-                                <li id="Orders_list_item"> Orders </li>
-                                </a>
-                             </ul>
-                    </div>
-                    <span id="menu_icon_img_lable">All</span>
                 </div>
-            </a>
-
-
-
-            <a id="hearderform_link" href="" style="text-decoration: none;">
+            
+            <a id="hearderform_link" href="">
               <div class="userloction">
-                  <div class="location_symbol">
-                      <img id="locSym" src="./all web image stock/icon-location.jpg" alt="">
-                  </div>
-                  <div class="hearderformText">
+                <i id="location_symbol" class="fa fa-map-marker"></i>
+                <div class="hearderformText">
                       <span id="Text1">Location is Mumbai</span>
                       <span id="Text2">Update Your Location</span>
-                  </div>
+                </div>
               </div>
             </a>
           
-                  <div class="SearchBar">
-                      <input type="search" id="Search" placeholder="Search Your Product....">
-                      <button id="submit_text">
-                          <img src="./all web image stock/search.png" alt="" width="100%" height="100%">
-                      </button>
-                  </div>
+            <div class="SearchBar">
+                <input type="search" id="Search" placeholder="  Search Your Product....">
+                <a href="##" id="summit_text">
+                    <i class="fa fa-search" id="search_icon"></i>
+                </a>
+            </div>
       
-              <a href="" id="headProfile_link" style="text-decoration: none;">
+            <a href="" id="headProfile_link" style="text-decoration: none;">
                   <div class="Account">
-                        <div class="userlogo">
-                            <img id="userlogo_img" src="./all web image stock/userLogin.png" alt="">
-                        </div>
+                        <i id="user_logo" class="fa fa-user"></i>
                         <span id="AccountText" >Account</span>
                   </div>
-              </a>
-                <a id="header_cart_link" href="">
-              <div class="header_cart">
-                    <div class="header_cart_img">
-                        <img id="cart_logo" src="./all web image stock/cart.png" alt="">
-                    </div>
-                    <span id="header_cart_items"> 0 Items</span>
-              </div>
-                </a>
+            </a>
+            
+            
+            <a id="header_cart_link" href="">
+                <div class="header_cart">
+                    <i id="cart_logo" class='fa fa-shopping-cart'></i>
+                    <span id="header_cart_items"> 0 Item</span>
+                </div>
+            </a>
         </div>
     </nav>
-
 
     <main>
         <section>
             <div class="Products_Animated_Film">   
                 <div class="container1">
-                    <a href="" id="film_product_1" style="text-decoration: none; height: 100%;" >
+                    <a href="http://127.0.0.1:5500/MiniProject/Section.html" id="film_product_1" style="text-decoration: none; height: 100%;" >
                         <div class="film_product1_section" >
                             
                             <div class="film_product_img1">
@@ -188,7 +184,7 @@
                         </div>
                     </a>
                     
-                    <a href="" id="film_product_7" style="text-decoration: none; height: 100%;" >
+                    <a href="" id="film_product_7" style="text-decoration: none; height: 90%;" >
                         <div class="film_product7_section" >
                             
                             <div class="film_product_img7">
@@ -221,7 +217,21 @@
 
     
     <footer>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="footerUpersection">
+                <div class="AboutUs">
+                    <h2>About Us</h2>
+                    <a href="">About</a>
+                </div>
+                <div class="Contact">
+                    <h2>Contact Us</h2>
+                    <a href="">Gmail</a>
+                </div>
+            </div>
+            <div class="copyrightSection">
+                <span> &copy; copyright All Right Reserved. 2023 </span>
+            </div>
+        </div>
     </footer>
 
 

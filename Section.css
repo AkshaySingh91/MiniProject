@@ -610,184 +610,140 @@ body:hover .s4{
 
 
 
- section{
-     display: flex;
-     flex-flow: column wrap;
-     align-items: center;
- }
- .Products_Animated_Film{
-     height: auto;
-     width: 99%;
-     box-sizing: border-box;
-     margin-bottom: 1vmin;
-     background: rgb(255,230,230);
-     background: radial-gradient(circle, rgba(255,230,230,1) 0%, rgba(255,255,255,1) 0%, rgba(255,244,244,1) 27%, rgba(255,243,243,1) 44%, rgba(255,244,244,1) 50%, rgba(177,177,177,0.7484243697478992) 86%, rgba(177,177,177,0.7372198879551821) 86%, rgba(190,188,188,0.8800770308123249) 94%);
- }
- 
- .container1{
 
-     box-sizing: border-box;
-     height: auto;
-     width: 100%;
-     display: flex;
-     flex-flow: row wrap;
-     align-items: center;
-     justify-content: space-evenly;
 
- }
- .film_product1_section, .film_product2_section, .film_product3_section,.film_product4_section, .film_product5_section, .film_product6_section, .film_product7_section{
-     box-sizing: border-box;
-     height: 28vmin;
-     width: 28vmin;
-     display: flex;
-     flex-flow: column nowrap;
-     align-items: center;
-     justify-content: space-evenly;
-     /* border: 1px solid black; */
-     margin-top: 5%;
 
- }
- .film_product_img1, .film_product_img2, .film_product_img3, .film_product_img4, .film_product_img5, .film_product_img6, .film_product_img7{
-     margin: 2%;
-     width: 95%;
-     height: 80%;
-     box-sizing: border-box;
-     position: relative;
 
- }
- #img1_pic, #img2_pic, #img3_pic, #img4_pic, #img5_pic, #img6_pic, #img7_pic{
-     height: 100%;
-     width: 100%;
-     
-     border-radius: 10px;
-     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);    
-     
- }
- #img_text1, #img_text2, #img_text3, #img_text4, #img_text5, #img_text6, #img_text7{
-     font-size: 3vmin;
-     font-family: 'Comic Neue', cursive;
-     color: rgb(34, 34, 34);
-     line-height: 90%;
- }
- .film_product1_grayscale, .film_product2_grayscale, .film_product3_grayscale, .film_product4_grayscale, .film_product5_grayscale, .film_product6_grayscale, .film_product7_grayscale{
-     height: 100%;
-     width: 100%;
-     background-color: rgba(0, 0, 0, 0.658);
-     border-radius: 10px;
-     transition: all 0.25s linear 0s;
-     position: absolute;
-     top: 0;
-     left: 0;
-     opacity: 0;
- }
- .film_product1_grayscale:hover, .film_product2_grayscale:hover, .film_product3_grayscale:hover, .film_product4_grayscale:hover, .film_product5_grayscale:hover, .film_product6_grayscale:hover, .film_product7_grayscale:hover{
-     opacity: 0.5;
- }
- .film_product1_section, .film_product2_section, .film_product3_section, .film_product4_section, .film_product5_section, .film_product6_section, .film_product7_section{
-     transition: all 0.25s linear 0s;
- }
- .film_product1_section:hover, .film_product2_section:hover, .film_product3_section:hover, .film_product4_section:hover, .film_product5_section:hover, .film_product6_section:hover, .film_product7_section:hover{
-        transform: scale(1.05);
+
+
+
+    .motor_section{
+        /* margin: 1.5vw 0.5vh; */
+        margin: 2vmin 0.5vmax;
     }
-
-
-
-
-
-
-
-    .High_Gurantee, .Most_Rated{
-        background: radial-gradient(circle, rgba(255,230,230,1) 0%, rgba(255,255,255,1) 0%, rgba(255,244,244,1) 27%, rgba(255,243,243,1) 44%, rgba(255,244,244,1) 50%, rgba(177,177,177,0.7484243697478992) 86%, rgba(177,177,177,0.7372198879551821) 86%, rgba(190,188,188,0.8800770308123249) 94%);
-        opacity: 0.6;
-        margin: 1vmin 0px;
-        height: auto;
-        width: 99%;
+    
+    .motor_section_container1, .motor_section_container2{
         box-sizing: border-box;
+        display: flex;
+        flex-flow: row nowrap;
+        
+        align-items: center;
+        justify-content: space-evenly;
+        background: rgb(240,240,240);
+        background: radial-gradient(circle, rgb(255, 255, 255) 14%, rgba(244, 242, 242, 0.532) 37%);
+        margin-bottom: 5vmin;
+    }
+    .motor_section_Product1, .motor_section_Product2, .motor_section_Product3, .motor_section_Product4, .motor_section_Product5, .motor_section_Product6{
+        height: 50vmin;
+        width: 16vmax;
         /* border: 1px solid black; */
+        box-sizing: border-box;
+        background-color: #f2edee; 
+
     }
-    #High_Gurantee_text, #Most_Rated_text{
+    .motor_section_Product1 a, .motor_section_Product2 a, .motor_section_Product3 a, .motor_section_Product4 a, .motor_section_Product5 a , .motor_section_Product6 a{
+        height: 100%; width: 100%; 
+        text-decoration: none;
+    }
+    .film_product_img1, .film_product_img2, .film_product_img3, .film_product_img4, .film_product_img5, .film_product_img6{
+        margin: 5%;
+        height: 70%;
+        width: 90%;
+        /* border: 1px solid black; */
+        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+    .film_product_img1 img, .film_product_img2 img, .film_product_img3 img, .film_product_img4 img, .film_product_img5 img, .film_product_img6 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 2px, 1px 1px 5px 1px rgba(0, 0, 0, 0.275);
+    }
+
+    .text1_heading, .text2_heading, .text3_heading, .text4_heading, .text5_heading, .text6_heading{
+        height: auto;
+        width: 100%;
+        margin-bottom: auto;
+        /* border: 1px solid black; */
+        box-sizing: border-box;
+        line-height: 110%;
+
+    }
+    .text1_heading span, .text2_heading span, .text3_heading span, .text4_heading span, .text5_heading span, .text6_heading span{
         font-size: 3vmin;
-        font-family: 'Comic Neue', cursive;
-        letter-spacing: 2px;
+        font-weight: 610;
         color: black;
-        padding: 10px;
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: auto;
+    }
+    
+    .Text1, .Text2, .Text3, .Text4, .Text5, .Text6{
+        height: 20%;
+        width: 90%;
+        margin: 5%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
     }
 
+    .img_wrap1, .img_wrap2, .img_wrap3, .img_wrap4, .img_wrap5, .img_wrap6{
+        height: 75%;
+        width: 100%;
+        margin-bottom: auto;
+        position: relative;
+    } 
+    
+    .film_product1_grayscale, .film_product2_grayscale, .film_product3_grayscale, .film_product4_grayscale,.film_product5_grayscale, .film_product6_grayscale{
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.3310574229691877) 0%, rgba(238,238,238,0.6223739495798319) 31%, rgba(242,238,238,0.529936974789916) 39%, rgba(148,148,148,0.7904411764705882) 64%, rgba(112,112,112,0.7624299719887955) 75%, rgba(85,85,85,0.8660714285714286) 82%, rgba(63,63,63,0.9837184873949579) 94%, rgba(0,0,0,0.8576680672268908) 100%);
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .film_product1_grayscale:hover, .film_product2_grayscale:hover, .film_product3_grayscale:hover, .film_product4_grayscale:hover,.film_product5_grayscale:hover, .film_product6_grayscale:hover{
+        opacity: 0.2;
+        transform: scale(0.99);
+    }
+    .film_product_img1:hover img, .film_product_img2:hover img, .film_product_img3:hover img, .film_product_img4:hover img, .film_product_img5:hover img, .film_product_img6:hover img{
+        transform: scale(0.99);   
+    }
+    
+    
+    .about_product1, .about_product2, .about_product3, .about_product4, .about_product5, .about_product6{
+        border: 1px solid black;
+        font-size: 2.7vmin;
+        font-family: 'Comic Neue', cursive;
+        text-align: center;
+        width: auto;
+        color: black;
+    }
+    .price_range1, .price_range2, .price_range3, .price_range4, .price_range5, .price_range6{
+        border: 1px solid black;
+        font-size: 3.5vmin;
+        font-family:sans-serif;
+        text-align: center;
+        color: black;
+
+    } 
+    
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer{
+    .footer{
     width: 100%;
-    height: auto;
+    height: 150px;
+    /* background-color: #272539; */
     background-color: #1e1127;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    box-sizing: border-box;
-}
-.footer .footerUpersection{
-    margin-bottom: 3vmin;
-    /* border: 1px solid wheat; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vmin;
-    height: 20vmin;
-    color: rgba(255, 255, 255, 0.69);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.footer a{
-    text-decoration: none;
-    color: rgba(245, 245, 245, 0.849);
-    font-size: 3vmin;
-    font-family: 'Comic Neue', cursive;
-}
-.AboutUs, .Contact{
-    /* border: 1px solid wheat; */
-    margin: 0px 3vmin;
-    display: flex;
-    flex-flow: column;
-
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80%;
-}
-.AboutUs h2, .Contact h2{
-    font-size: 3.5vmin;
-}
-.footer .copyrightSection{
-    margin-bottom: 3vmin;
-
-    /* border: 1px solid wheat; */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 20%;
-    color: white;
-    font-size: 2.8vmin;
-}
-.footer a:hover{
-    text-decoration: underline;
-}
+    }
