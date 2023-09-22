@@ -523,7 +523,8 @@ body:hover .s4{
     color: whitesmoke;
 }
 
-@media (width<=500px) {
+
+@media (width<=1500px) {
     .navigation{
         height: 10vmin;
     }    
@@ -536,6 +537,15 @@ body:hover .s4{
      #hearderform_link{
         width: 20%;
     } 
+    #location_symbol{
+        position: relative;
+        top: 20%;
+        left: 16%;
+        font-size: 3vmin;
+    }
+    .hearderformText{
+        position: relative;
+    }
     #Text1, #Text2{
         font-size: 2vmin;
     }
@@ -555,7 +565,7 @@ body:hover .s4{
         justify-content: center;
     }
     #user_logo{
-        font-size: 7vmin;
+        font-size: 5.7vmin;
     }
     #menu_icon_lable{
         display: none;
@@ -572,6 +582,7 @@ body:hover .s4{
 
 
 }    
+
 
 #header_cart_link{
     text-decoration: none; height: 80%; width: 8%;
@@ -720,7 +731,6 @@ body:hover .s4{
     
     
     .about_product1, .about_product2, .about_product3, .about_product4, .about_product5, .about_product6{
-        border: 1px solid black;
         font-size: 2.7vmin;
         font-family: 'Comic Neue', cursive;
         text-align: center;
@@ -728,7 +738,6 @@ body:hover .s4{
         color: black;
     }
     .price_range1, .price_range2, .price_range3, .price_range4, .price_range5, .price_range6{
-        border: 1px solid black;
         font-size: 3.5vmin;
         font-family:sans-serif;
         text-align: center;
@@ -741,9 +750,61 @@ body:hover .s4{
 
 
 
+
     .footer{
-    width: 100%;
-    height: 150px;
-    /* background-color: #272539; */
-    background-color: #1e1127;
+        width: 100%;
+        height: auto;
+        background-color: #1e1127;
+    
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .footer .footerUpersection{
+        margin-bottom: 3vmin;
+        /* border: 1px solid wheat; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vmin;
+        height: 20vmin;
+        color: rgba(255, 255, 255, 0.69);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .footer a{
+        text-decoration: none;
+        color: rgba(245, 245, 245, 0.849);
+        font-size: 3vmin;
+        font-family: 'Comic Neue', cursive;
+    }
+    .AboutUs, .Contact{
+        /* border: 1px solid wheat; */
+        margin: 0px 3vmin;
+        display: flex;
+        flex-flow: column;
+    
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80%;
+    }
+    .AboutUs h2, .Contact h2{
+        font-size: 3.5vmin;
+    }
+    .footer .copyrightSection{
+        margin-bottom: 3vmin;
+    
+        /* border: 1px solid wheat; */
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 20%;
+        color: white;
+        font-size: 2.8vmin;
+    }
+    .footer a:hover{
+        text-decoration: underline;
     }
