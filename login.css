@@ -160,3 +160,6 @@ input[type="submit"]:hover {
 form{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+body{
+    -webkit-tap-highlight-color: transparent;
+}

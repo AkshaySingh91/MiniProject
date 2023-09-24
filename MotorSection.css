@@ -808,3 +808,6 @@ body:hover .s4{
     .footer a:hover{
         text-decoration: underline;
     }
+    body{
+        -webkit-tap-highlight-color: transparent;
+    }
