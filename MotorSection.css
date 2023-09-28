@@ -468,7 +468,9 @@ body:hover .s4{
     align-items: center;
 
 }
-#Search{
+
+.SearchBar input{
+
     height: 80%;
     width: 94%;
     background-color:rgb(253, 253, 253);
@@ -476,8 +478,18 @@ body:hover .s4{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 2.5vmin;
-
+    padding-left: 1vmin;
 }
+.SearchBar input:focus{
+    outline: 2px solid rgb(71, 122, 217);
+    padding: 2vmin;
+    font-size: 3vmin;
+}
+.SearchBar input:focus ~ #summit_text{
+    border: 2px solid rgb(71, 122, 217);
+    border-left: none;
+}
+
 #summit_text{
     height: 80%;
     width: 6%;
@@ -660,10 +672,10 @@ body:hover .s4{
         margin: 5% 5% 0% 5%;
         height: 65%;
         width: 90%;
-        border: 1px solid black;
         text-align: center;
         display: flex;
         flex-flow: column nowrap;
+        /* border: 1px solid black; */
     }
     .film_product_img1 img, .film_product_img2 img, .film_product_img3 img, .film_product_img4 img, .film_product_img5 img, .film_product_img6 img{
         width: 100%;
@@ -678,7 +690,6 @@ body:hover .s4{
         width: 100%;
         margin-bottom: auto;
         box-sizing: border-box;
-        line-height: 110%;
 
     }
     .text1_heading span, .text2_heading span, .text3_heading span, .text4_heading span, .text5_heading span, .text6_heading span{
@@ -698,7 +709,7 @@ body:hover .s4{
         flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid black;
+        /* border: 1px solid black; */
 
     }
 
@@ -736,14 +747,26 @@ body:hover .s4{
 
     } 
     
+    @media (width<=2000px) and (width>=1500px) {
+        .price_range1, .price_range2, .price_range3, .price_range4{
+            font-size: 3vmin;    
+        }
+    }
     body{
         -webkit-tap-highlight-color: transparent;
     }
 
     .Text1 .about_product1, .Text2 .about_product2 , .Text3 .about_product3, .Text4 .about_product4, .Text5 .about_product5, .Text6 .about_product6{
-        width: 75%;
+        width: 70%;
         height: 35%;
-        
+    }
+    @media (width<=1500px) {
+        .Text1 .about_product1, .Text2 .about_product2 , .Text3 .about_product3, .Text4 .about_product4, .Text5 .about_product5, .Text6 .about_product6{
+            width: 90%;
+        }
+        .text1_heading, .text2_heading, .text3_heading, .text4_heading, .text5_heading, .text6_heading{
+            line-height: 80%;    
+        }
     }
 
     .Text1 .about_product1 button, .Text2 .about_product2 button, .Text3 .about_product3 button, .Text4 .about_product4 button, .Text5 .about_product5 button, .Text6 .about_product6 button{

@@ -468,7 +468,9 @@ body:hover .s4{
     align-items: center;
 
 }
-#Search{
+
+.SearchBar input{
+
     height: 80%;
     width: 94%;
     background-color:rgb(253, 253, 253);
@@ -476,7 +478,16 @@ body:hover .s4{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 2.5vmin;
-
+    padding-left: 1vmin;
+}
+.SearchBar input:focus{
+    outline: 2px solid rgb(71, 122, 217);
+    padding: 2vmin;
+    font-size: 3vmin;
+}
+.SearchBar input:focus ~ #summit_text{
+    border: 2px solid rgb(71, 122, 217);
+    border-left: none;
 }
 #summit_text{
     height: 80%;
@@ -646,7 +657,7 @@ body:hover .s4{
     }
     .resistor_section_Product1, .resistor_section_Product2, .resistor_section_Product3, .resistor_section_Product4{
         height: 50vmin;
-        width: 16vmax;
+        width: 15vmax;
         /* border: 1px solid black; */
         box-sizing: border-box;
         background-color: #f2edee; 
@@ -657,8 +668,8 @@ body:hover .s4{
         text-decoration: none;
     }
     .film_product_img1, .film_product_img2, .film_product_img3, .film_product_img4{
-        margin: 5%;
-        height: 70%;
+        margin: 5% 5% 0% 5%;
+        height: 65%;
         width: 90%;
         /* border: 1px solid black; */
         text-align: center;
@@ -677,29 +688,33 @@ body:hover .s4{
         height: auto;
         width: 100%;
         margin-bottom: auto;
-        /* border: 1px solid black; */
         box-sizing: border-box;
-        line-height: 110%;
-
+    }
+    @media (width<=500px) {
+        .text1_heading, .text2_heading, .text3_heading, .text4_heading{
+            line-height: 70%;
+        }
     }
     .text1_heading span, .text2_heading span, .text3_heading span, .text4_heading span{
-        font-size: 3vmin;
+        font-size: 2.8vmin;
         font-weight: 610;
         color: black;
         text-align: center;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: auto;
+        /* border: 1px solid black; */
     }
     
     .Text1, .Text2, .Text3, .Text4{
-        height: 20%;
+        height: 29%;
         width: 90%;
-        margin: 5%;
-        /* border: 1px solid black; */
+        margin: 1% 5% 5% 5%;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
+        /* border: 1px solid black; */
+        gap: 20%;
     }
 
     .img_wrap1, .img_wrap2, .img_wrap3, .img_wrap4{
@@ -729,85 +744,175 @@ body:hover .s4{
         transform: scale(0.99);   
     }
     
-    
-    .about_product1, .about_product2, .about_product3, .about_product4{
-        font-size: 2.7vmin;
-        font-family: 'Comic Neue', cursive;
-        text-align: center;
-        width: auto;
-        color: black;
-    }
     .price_range1, .price_range2, .price_range3, .price_range4{
         font-size: 3.5vmin;
         font-family:sans-serif;
         text-align: center;
         color: black;
+        /* border: 1px solid black; */
 
     } 
-    
+    @media (width<=2000px) and (width>=1500px) {
+        .price_range1, .price_range2, .price_range3, .price_range4{
+            font-size: 3vmin;    
+        }
+    }
 
 
 
 
 
-
-    .footer{
-        width: 100%;
-        height: auto;
-        background-color: #1e1127;
-    
-        display: flex;
-        flex-flow: column;
-        justify-content: space-evenly;
-        align-items: center;
-        box-sizing: border-box;
-    }
-    .footer .footerUpersection{
-        margin-bottom: 3vmin;
-        /* border: 1px solid wheat; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90vmin;
-        height: 20vmin;
-        color: rgba(255, 255, 255, 0.69);
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .footer a{
-        text-decoration: none;
-        color: rgba(245, 245, 245, 0.849);
-        font-size: 3vmin;
-        font-family: 'Comic Neue', cursive;
-    }
-    .AboutUs, .Contact{
-        /* border: 1px solid wheat; */
-        margin: 0px 3vmin;
-        display: flex;
-        flex-flow: column;
-    
-        justify-content: space-evenly;
-        align-items: center;
-        height: 80%;
-    }
-    .AboutUs h2, .Contact h2{
-        font-size: 3.5vmin;
-    }
-    .footer .copyrightSection{
-        margin-bottom: 3vmin;
-    
-        /* border: 1px solid wheat; */
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        height: 20%;
-        color: white;
-        font-size: 2.8vmin;
-    }
-    .footer a:hover{
-        text-decoration: underline;
-    }
     body{
         -webkit-tap-highlight-color: transparent;
     }
+
+    
+    .Text1 .about_product1, .Text2 .about_product2 , .Text3 .about_product3, .Text4 .about_product4, .Text5 .about_product5, .Text6 .about_product6{
+        width: 72%;
+        height: 35%;
+    }
+
+    .Text1 .about_product1 button, .Text2 .about_product2 button, .Text3 .about_product3 button, .Text4 .about_product4 button, .Text5 .about_product5 button, .Text6 .about_product6 button{
+        background: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+        font-size: 2.3vmin;
+        /* font-family: 'Comic Neue', cursive; */
+        text-align: center;
+        color: black;
+    }
+    @media (width<=1500px) {
+        .Text1 .about_product1, .Text2 .about_product2 , .Text3 .about_product3, .Text4 .about_product4, .Text5 .about_product5, .Text6 .about_product6{
+            width: 90%;
+        }
+        .Text1 .about_product1 button, .Text2 .about_product2 button, .Text3 .about_product3 button, .Text4 .about_product4 button, .Text5 .about_product5 button, .Text6 .about_product6 button{
+            font-size: 2vmin;
+        }
+    }
+    .Text1 .about_product1 button, .Text2 .about_product2 button, .Text3 .about_product3 button, .Text4 .about_product4 button, .Text5 .about_product5 button, .Text6 .about_product6 button{
+        padding: 0vmin 2vmin;
+        background-color: rgb(247, 244, 244);
+        border-radius: 20px;
+        box-sizing: border-box;
+        border-style: none;
+        appearance: none;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.271) 0 3px 5px -1px,rgba(0, 0, 0, 0.362) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+        color: #434546;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: "Google Sans",Roboto,Arial,sans-serif;
+        font-weight: 500;
+        justify-content: center;
+        /* letter-spacing: .03vmin; */
+        line-height: normal;
+        overflow: visible;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform,opacity;
+        z-index: 0;
+    }
+    
+    .Text1 .about_product1 button:hover, .Text2 .about_product2 button:hover, .Text3 .about_product3 button:hover, .Text4 .about_product4 button:hover, .Text5 .about_product5 button:hover, .Text6 .about_product6 button:hover{
+        background: #ffffffd8;
+        color: #4f4848;
+    }
+    
+    .Text1 .about_product1 button:active, .Text2 .about_product2 button:active, .Text3 .about_product3 button:active, .Text4 .about_product4 button:active, .Text5 .about_product5 button:active, .Text6 .about_product6 button:active{
+        box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.429), 0 8px 12px 6px rgba(44, 46, 48, 0.15);
+        outline: none;
+    }
+    
+    .Text1 .about_product1 button:focus, .Text2 .about_product2 button:focus, .Text3 .about_product3 button:focus, .Text4 .about_product4 button:focus, .Text5 .about_product5 button:focus, .Text6 .about_product6 button:focus{
+        outline: none;
+        outline: 1px solid rgb(199, 172, 172);
+        border: 2px solid rgba(238, 224, 224, 0.853);
+    }
+    
+    
+    .Text1 .about_product1 button:not(:disabled) , .Text2 .about_product2 button:not(:disabled) , .Text3 .about_product3 button:not(:disabled) , .Text4 .about_product4 button:not(:disabled) , .Text5 .about_product5 button:not(:disabled) , .Text6 .about_product6 button:not(:disabled) {
+      box-shadow: rgba(60, 64, 67, 0.412) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    }
+    
+    .Text1 .about_product1 button:not(:disabled):hover , .Text2 .about_product2 button:not(:disabled):hover , .Text3 .about_product3 button:not(:disabled):hover , .Text4 .about_product4 button:not(:disabled):hover , .Text5 .about_product5 button:not(:disabled):hover , .Text6 .about_product6 button:not(:disabled):hover {
+      box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+    }
+    
+    .Text1 .about_product1 button:not(:disabled):focus , .Text2 .about_product2 button:not(:disabled):focus , .Text3 .about_product3 button:not(:disabled):focus , .Text4 .about_product4 button:not(:disabled):focus , .Text5 .about_product5 button, .Text6 .about_product6 button:not(:disabled):focus {
+        box-shadow: rgba(60, 64, 67, 0.405) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    }
+    .Text1 .about_product1 button:not(:disabled):active , .Text2 .about_product2 button:not(:disabled):active , .Text3 .about_product3 button:not(:disabled):active , .Text4 .about_product4 button:not(:disabled):active , .Text5 .about_product5 button:not(:disabled):active , .Text6 .about_product6 button:not(:disabled):active {
+        box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+    }
+    .Text1 .about_product1 button:disabled , .Text2 .about_product2 button:disabled , .Text3 .about_product3 button:disabled , .Text4 .about_product4 button:disabled , .Text5 .about_product5 button:disabled , .Text6 .about_product6 button:disabled {
+      box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    }
+
+    
+
+
+    
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #1e1127;
+        
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .footer .footerUpersection{
+            margin-bottom: 3vmin;
+            /* border: 1px solid wheat; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90vmin;
+            height: 20vmin;
+            color: rgba(255, 255, 255, 0.69);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer a{
+            text-decoration: none;
+            color: rgba(245, 245, 245, 0.849);
+            font-size: 3vmin;
+            font-family: 'Comic Neue', cursive;
+        }
+        .AboutUs, .Contact{
+            /* border: 1px solid wheat; */
+            margin: 0px 3vmin;
+            display: flex;
+            flex-flow: column;
+        
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80%;
+        }
+        .AboutUs h2, .Contact h2{
+            font-size: 3.5vmin;
+        }
+        .footer .copyrightSection{
+            margin-bottom: 3vmin;
+        
+            /* border: 1px solid wheat; */
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            height: 20%;
+            color: white;
+            font-size: 2.8vmin;
+        }
+        .footer a:hover{
+            text-decoration: underline;
+        }
