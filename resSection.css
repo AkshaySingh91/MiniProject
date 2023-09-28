@@ -369,22 +369,54 @@ body:hover .s4{
     #Menu_Sidebar a{
         text-decoration: none;
     }
-    #Menu_Sidebar_header{
+    #Menu_Sidebar h1{
+        /* border: 1px solid black; */
         box-sizing: border-box;
         text-align: center;
         height: auto;
-        padding: 5% 5%;
+        padding: 5% 5% 1% 5%;
         font-size: 4.5vmin;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family:sans-serif;
+        color: #100e0e;
 
+        background-image: url(https://static.vecteezy.com/system/resources/previews/004/405/039/non_2x/blue-and-red-color-gradient-background-free-vector.jpg);
+        background-position: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+    }
+    #Menu_Sidebar h2{
+        text-align: center;
+        font-size: 2.3vmin;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 600;
+        color: #434343;
+        padding-bottom: 7%;
+        
+        background-image: url(https://media.istockphoto.com/id/1251007701/photo/abstract-blurred-colorful-gradient-background-in-soft-style.jpg?s=612x612&w=0&k=20&c=J3MxBvMODVvQCYRw8BRkWXhsqsE9XbxxnmMyz42R5-E=);
+        background-position: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        
     }
     #Home_list_item, #Profile_list_item, #Seller_list_item, #Cart_list_item, #Orders_list_item{
         text-align: center;
         box-sizing: border-box;
-        padding: 7% 5%;
+        padding: 7% 0%;
         font-family: 'Comic Neue', cursive;
         transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid black; */
+        gap: 7%;
     }
+    #Home_list_item span, #Profile_list_item span, #Seller_list_item span, #Cart_list_item span, #Orders_list_item span{
+        color: rgb(11, 7, 92);
+    }
+  
     #Home_list_item:hover, #Profile_list_item:hover, #Seller_list_item:hover, #Cart_list_item:hover, #Orders_list_item:hover{
         background-color: rgba(168, 168, 168, 0.747);
         letter-spacing: 1px;            
@@ -418,6 +450,17 @@ body:hover .s4{
         left: 36vmin;
         color: white;
     }
+      
+    #Home_list_item img, #Profile_list_item img, #Cart_list_item img, #Orders_list_item img{
+        height: 60%;
+        width: 15%;
+        /* border: 1px solid black; */
+   
+       }
+       
+        #Seller_list_item img{
+        width: 20%;
+       }
     
     
     
@@ -482,7 +525,6 @@ body:hover .s4{
 }
 .SearchBar input:focus{
     outline: 2px solid rgb(71, 122, 217);
-    padding: 2vmin;
     font-size: 3vmin;
 }
 .SearchBar input:focus ~ #summit_text{
