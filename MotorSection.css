@@ -414,10 +414,13 @@ body:hover .s4{
     }
     #Home_list_item span, #Profile_list_item span, #Seller_list_item span, #Cart_list_item span, #Orders_list_item span{
         color: rgb(11, 7, 92);
+        /* border: 1px solid black; */
+        width: 35%;
     }
-      #Home_list_item:hover, #Profile_list_item:hover, #Seller_list_item:hover, #Cart_list_item:hover, #Orders_list_item:hover{
-        background-color: rgba(168, 168, 168, 0.747);
-        letter-spacing: 1px;            
+    
+    #Home_list_item:hover, #Profile_list_item:hover, #Seller_list_item:hover, #Cart_list_item:hover, #Orders_list_item:hover{
+        background-color: #e3e5ff;
+        letter-spacing: 1px;    
     }
     .hide_sidebar{
         position: fixed;
