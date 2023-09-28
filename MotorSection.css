@@ -522,7 +522,6 @@ body:hover .s4{
 }
 .SearchBar input:focus{
     outline: 2px solid rgb(71, 122, 217);
-    padding: 2vmin;
     font-size: 3vmin;
 }
 .SearchBar input:focus ~ #summit_text{
