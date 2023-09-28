@@ -309,9 +309,9 @@ body:hover .s4{
     height: 80%;
     width: 4%;
     margin-left: 1%;
-
 }
-.menu label{
+
+.menu #nav_lable{
     height: 100%;
     width: 100%;
     display: flex;
@@ -333,31 +333,57 @@ body:hover .s4{
     /* font-family: 'IBM Plex Serif', serif; */
     color: white;
 }
+
 .sidebar_section{
     height: 100vh;
-    width: 0%;
+    width: 35vmin;
     position: fixed;
-    top: 0px;
-    left: -60vw;
-    display: inline;
-    transition: all 0s linear;    
+    top: 0vw;
+    left: -40vmax;
+    background-color: rgba(0, 0, 0, 0.482);
+    display: flex;
+    z-index: 1;
+    transition: all 0.35s  cubic-bezier(0.42,0,0.1,1);
+}
+
+.hide_sidebar{
+    display: inline-flex;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.hide_sidebar label{
+    padding-left: 2%;
+    width: 100%;
+    height: 100%;     
+    font-size: 8.5vmin;
+    color: white;
+    /* border: 1px solid black; */
+    transition: all 0.5s ease;
 }
 
 #Menu_Sidebar{
-  height: 100%;
-  width: 35vmin;
-  position: fixed;
-  left: -60vw;
+    height: 100%;
+    width: 35vmin;
+    
+    background-color: #f4f5ff;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.325),
+    2px 2px 3px  rgba(0, 0, 0, 0.466);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
 
-  background-color: #f4f5ff;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.325),
-  2px 2px 3px  rgba(0, 0, 0, 0.466);
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  transition: all 0.35s ease;    
+#Show_sidebar{
+    display: none;
+}
+#Show_sidebar:checked  ~.sidebar_section {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
-    }
+
     #Menu_Sidebar ul li{
         height: auto;
         list-style: none;
@@ -422,35 +448,6 @@ body:hover .s4{
         background-color: #e3e5ff;
         letter-spacing: 1px;    
     }
-    .hide_sidebar{
-        position: fixed;
-        top: 0vmin;
-        left: -60vw;
-        transition: all 0.5s ease;
-    }
-    #Show_sidebar{
-        display: none;
-    }
-    #Show_sidebar:checked  ~.sidebar_section {
-        width: 100%;
-        height: 100%;
-        top: 0vh;
-        left: 0vw;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.612)
-    }
-    #Show_sidebar:checked ~ .sidebar_section #Menu_Sidebar{
-        top: 0px;
-        left: 0px;
-    }
-
-    #Show_sidebar:checked ~ .sidebar_section .hide_sidebar {
-        display: inline;
-        font-size: 8vmin;
-        top: 0vmin;
-        left: 36vmin;
-        color: white;
-    }
     
     #Home_list_item img, #Profile_list_item img, #Cart_list_item img, #Orders_list_item img{
      height: 60%;
@@ -462,6 +459,10 @@ body:hover .s4{
      #Seller_list_item img{
      width: 20%;
     }
+
+
+
+
     
 #hearderform_link{
     text-decoration: none; height: 80%; width: 13%;
