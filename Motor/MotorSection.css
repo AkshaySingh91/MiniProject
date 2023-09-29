@@ -524,11 +524,11 @@ body:hover .s4{
     padding-left: 1vmin;
 }
 .SearchBar input:focus{
-    outline: 2px solid rgb(71, 122, 217);
+    outline: 3px solid rgb(225, 161, 0);
     font-size: 3vmin;
 }
 .SearchBar input:focus ~ #summit_text{
-    border: 2px solid rgb(71, 122, 217);
+    border: 3px solid rgb(225, 161, 0);
     border-left: none;
 }
 
