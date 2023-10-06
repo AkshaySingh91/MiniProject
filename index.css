@@ -424,6 +424,7 @@ body:hover .s4{
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        border-bottom: 2px solid rgb(205, 204, 204);
         
     }
     #Home_list_item, #Profile_list_item, #Seller_list_item, #Cart_list_item, #Orders_list_item{
@@ -435,8 +436,13 @@ body:hover .s4{
         display: flex;
         align-items: center;
         justify-content: center;
-        /* border: 1px solid black; */
+        border-bottom: 3px solid #ffffff;
         gap: 7%;
+    }
+    @media (width<=500px){
+        #Home_list_item, #Profile_list_item, #Seller_list_item, #Cart_list_item, #Orders_list_item{
+            border-bottom: 1.5px solid #ffffff;
+        }
     }
     #Home_list_item span, #Profile_list_item span, #Seller_list_item span, #Cart_list_item span, #Orders_list_item span{
         color: rgb(11, 7, 92);
@@ -446,7 +452,7 @@ body:hover .s4{
     
     #Home_list_item:hover, #Profile_list_item:hover, #Seller_list_item:hover, #Cart_list_item:hover, #Orders_list_item:hover{
         background-color: #e3e5ff;
-        letter-spacing: 1px;    
+        letter-spacing: 1px;   
     }
     
     #Home_list_item img, #Profile_list_item img, #Cart_list_item img, #Orders_list_item img{

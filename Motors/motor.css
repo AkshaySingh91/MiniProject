@@ -683,7 +683,7 @@ body:hover .s4{
 }
 
 .motor_section_level1, .motor_section_level2{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
     box-sizing: border-box;
     display: flex;
@@ -715,7 +715,7 @@ body:hover .s4{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .film_product_img1, .film_product_img2, .film_product_img3, .film_product_img4, .film_product_img5, .film_product_img6, .film_product_img7, .film_product_img8, .film_product_img9, .film_product_img10{
@@ -752,12 +752,12 @@ body:hover .s4{
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     
 }
 .product1_desrp, .product2_desrp, .product3_desrp, .product4_desrp, .product5_desrp, .product6_desrp, .product7_desrp, .product8_desrp, .product9_desrp, .product10_desrp{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 90%;
     text-align:start;
     font-size: 2.5vmin;
@@ -768,13 +768,13 @@ body:hover .s4{
     text-overflow: ellipsis; 
 }
 .product1_rating, .product2_rating, .product3_rating, .product4_rating, .product5_rating, .product6_rating, .product7_rating, .product8_rating, .product9_rating, .product10_rating{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: auto;
     font-size: 2.5vmin;
     color: rgb(225, 161, 0);;
 }
 .product1_price, .product2_price, .product3_price, .product4_price, .product5_price, .product6_price,.product7_price, .product8_price, .product9_price, .product10_price{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     font-size: 3.5vmin;
     font-family:sans-serif;
@@ -828,3 +828,67 @@ body{
 
 
 
+
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #1e1127;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+.footer .footerUpersection{
+    margin-bottom: 3vmin;
+    /* border: 1px solid wheat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vmin;
+    height: 20vmin;
+    color: rgba(255, 255, 255, 0.69);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer a{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.849);
+    font-size: 3vmin;
+    font-family: 'Comic Neue', cursive;
+}
+.AboutUs, .Contact{
+    /* border: 1px solid wheat; */
+    margin: 0px 3vmin;
+    display: flex;
+    flex-flow: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+.AboutUs h2, .Contact h2{
+    font-size: 3.5vmin;
+}
+.footer .copyrightSection{
+    margin-bottom: 3vmin;
+
+    /* border: 1px solid wheat; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 20%;
+    color: white;
+    font-size: 2.8vmin;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+body{
+    -webkit-tap-highlight-color: transparent;
+}
