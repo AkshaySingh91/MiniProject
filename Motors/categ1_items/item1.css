@@ -86,11 +86,6 @@ main {
     margin: 3vmin 2vmin;
 }
 
-.avgPrice p span {
-    /* font-size: 100%; */
-}
-
-
 .buttons {
     border: var(--brd);
     width: 80vmin;
@@ -126,7 +121,7 @@ main {
     font-weight: 500;
 }
 
-.sellerList {
+.sellerList{
     /* border: var(--brd); */
     width: 80vmin;
     height: auto;
@@ -134,86 +129,25 @@ main {
     overflow: hidden;
 }
 
-.headBar {
-    /* border: var(--brd); */
-    height: 7vmin;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.headBar #mercIcon {
-    /* border: var(--brd); */
-    height: 100%;
-    width: 8%;
-    margin: 3%;
-}
-
-.headBar #collapseIcon {
-    /* border: var(--brd); */
-    height: 50%;
-    width: 5%;
-    margin-right: 5%;
-    transition: all 0.3s linear 0s;
-}
-
-.headBar p {
-    font-size: 130%;
-    font-family: var(--para-fnt);
-    margin-right: auto;
-}
-
-.allSellerSection {
-    height: auto;
-    width: 80vmin;
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    top: -100%;
-    left: 0%;
-    transition: all 0.3s linear 0s;  
-}
-.content{
-    /* border: var(--brd); */
-    height: 0;
-    width: 100%;
-    overflow: hidden;
-    transition: all 0.3s linear 0s;
-}
-#allSellerHeading ul li, .seller1 ul li, .seller2 ul li, .seller3 ul li, .seller4 ul li{
+#allSellerHeading ul li, #motorSeller1 ul li{ 
     list-style: none;
     display: inline;
     text-align: center;
 }
-#allSellerHeading ul, .seller1 ul, .seller2 ul, .seller3 ul, .seller4 ul{
+
+#allSellerHeading ul, #motorSeller1 ul{
     display: flex;
     justify-content: space-evenly;
 }
+
 #allSellerHeading{
     margin-bottom: 3%;
     font-size: 140%;
     font-family: var(--heading-fnt);
 }
-.seller1 ul, .seller2 ul, .seller3 ul, .seller4 ul{
+#motorSeller1 ul{
     font-size: 110%;
     font-family: var(--para-fnt);
     padding: 1vmin;
     /* outline: 1px solid black; */
-}
-
-.rotateCollapseIcon{
-    transform: rotate(180deg);
-}
-#showList{
-    display: none;
-}
-.hideList{
-    transition: all 0.3s linear 0s;
-    position: relative;
-    top : 0%;
-    left: 0;
-}
-.squez{
-    transition: all 0.3s linear 0s;
-    height: 100%;
 }
