@@ -1,0 +1,17 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 50vmin;
+    width: 50vmin;
+    border: 5px dashed black;
+}
+.content{
+    height: 50vmin;
+    width: 50vmin;
+    border: 5px dashed black;
+    
+}
