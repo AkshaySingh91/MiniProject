@@ -1,0 +1,67 @@
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #1e1127;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer .footerUpersection {
+    margin-bottom: 3vmin;
+    /* border: 1px solid wheat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vmin;
+    height: 20vmin;
+    color: rgba(255, 255, 255, 0.69);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.849);
+    font-size: 3vmin;
+    font-family: 'Comic Neue', cursive;
+}
+
+.AboutUs,
+.Contact {
+    /* border: 1px solid wheat; */
+    margin: 0px 3vmin;
+    display: flex;
+    flex-flow: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+
+.AboutUs h2,
+.Contact h2 {
+    font-size: 3.5vmin;
+}
+
+.footer .copyrightSection {
+    margin-bottom: 3vmin;
+
+    /* border: 1px solid wheat; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 20%;
+    color: white;
+    font-size: 2.8vmin;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

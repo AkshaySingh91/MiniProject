@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/<%= id %>/edit?_method=PATCH" >
+        <h2>your id is <%= id %></h2>   
+        <h2>your email is <%= email %></h2>
+        <h2>your Password is <%= pass %></h2>
+        
+        <label  for="pass"> Enter Your Password</label>
+        <input name="pass" id="pass" type="text">
+        
+        <label  for="newEmail"> Enter new Email</label>
+        <input name="newEmail" id="newEmail" type="text">
+        
+        <label  for="newPass"> Enter new Password</label>
+        <input name="newPass" id="newPass" type="text">
+        
+        
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>

@@ -1,1 +1,0 @@
-const basket = JSON.parse(localStorage.getItem("cartData")) || [];

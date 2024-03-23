@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productlist</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/productlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=IBM+Plex+Serif:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <%- include("includes/header") %>
+        <main>
+            <div class="product-grid">
+                <%for(let i=0; i<productsOnPage.length; i++){%>
+                    <a href="<%=wholepath%>/productlist">
+                        <div class="product-card">
+                            <img class="product-image" src="<%=productsOnPage[i].productImage[0] %>" 
+                                alt="Product 1">
+                            <div class="product-details">
+                                <div class="product-title">
+                                    <%=productsOnPage[i].title %>
+                                </div>
+                                <div class="price-container">
+                                    <div class="product-price">
+                                        &#x20B9;<%=productsOnPage[i].price.toLocaleString("en-IN")%>
+                                    </div>
+                                    <!-- <div class="product-price-reduced">$10.99</div> -->
+                                </div>
+                                <div class="product-review-stars">★★★★</div>
+                                <div class="product-descript">
+                                    <%=productsOnPage[i].description%>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <%}%>
+
+            </div>
+
+            <div class="pagination">
+                <div class="totalPages">
+                <span>
+                    Showing <span id="startProductNo" ><%=1%></span>  to <span id="endProductNo" ><%=(productsOnPage.length)*page%></span> of
+                    <span id="totalNoOfProduct"><%=totalNoOfProduct%></span>
+                </span>
+                </div>
+
+                <%let n;%>
+                <!-- 3 = default no of  page link -->
+                <%if(totalNoOfProduct >= productPerPage * 3){%>
+                    <%n = 3;%>
+                <%}else{%>
+                    <%n = Math.ceil(totalNoOfProduct/productPerPage);%>
+                <%}%> 
+
+                <button id="leftSidePage">&laquo;</button>
+                <!-- totalNoOfProduct can be added -->
+                <% for(let i=0; i<n; i++){%>
+                    <a  href="<%=wholepath%>/productlist?page=<%=i+1%>&categoriesId=<%=productsOnPage[0].categoriesId%>"><%=i+1%></a>
+                <%}%>
+                <button id="rightSidePage">&raquo;</button>
+            </div>
+            
+        </main>
+                
+                <%- include('includes/footer') %>
+                <script src="../JS/productlist.js"></script>
+</body>
+
+</html>

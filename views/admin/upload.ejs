@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/CSS/upload.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateSection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1 id="welcome">Welcome on Admin page</h1>
+
+    <div class="container">
+        <h2 id="inst">Submit few Details </h2>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="getCategory">Add Category</label>
+            <input type="text" name="getCategory" id="Category" maxlength="20">
+
+            <label for="getParentCategory">Parent-Category</label>
+            <select name="getParentCategory" id="getParentCategory">
+                <option value="none" selected> None </option>
+                <% for(let i=0; i<sec.length; i++){ %>
+                    <option value="<%= sec[i] %>">
+                        <%= sec[i] %>
+                    </option>
+                    <% } %>
+            </select>
+            <div class="specification">
+                <div class="state">
+                    <h3>Want to set Specification: </h3>
+                    <label id="specLable" for="yes">Yes</label>
+                    <input value="yes" type="radio" name="anySpec" id="yes">
+                    <label id="specLable" for="no">No</label>
+                    <input value="no" type="radio" name="anySpec" id="no">
+                </div>  
+            </div> 
+            <div class="files">
+                <div class="uploadSectionImage">
+                    <span id="instruct">Click or Drop Product image here</span>
+                    <input name="image" class="uploadSectionImage" type="file" multiple>
+                </div>
+                <input class="" type="submit">
+            </div>
+    </div>
+
+    </form>
+
+</body>
+<script src="/JS/upload.js"></script>
+
+</html>

@@ -1,5 +1,4 @@
-
-
+ 
 // console.log(document.body.getElementsByTagName("p")[0].hidden = false);
 // document.getElementsByTagName("p")[0].removeAttribute("style")
 

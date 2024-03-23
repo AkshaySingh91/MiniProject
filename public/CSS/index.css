@@ -1,0 +1,266 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.Products_Animated_Film {
+    height: auto;
+    width: 99%;
+    margin-bottom: 1vmin;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(255, 230, 230, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 244, 244, 1) 27%, rgba(255, 243, 243, 1) 44%, rgba(255, 244, 244, 1) 50%, rgba(177, 177, 177, 0.7484243697478992) 86%, rgba(177, 177, 177, 0.7372198879551821) 86%, rgba(190, 188, 188, 0.8800770308123249) 94%);
+}
+
+.container1 {
+    height: auto;
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    animation: loop 15s linear 0s infinite none;
+}
+
+.before {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.after {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+}
+
+@keyframes loop {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.film_product1_section,
+.film_product2_section,
+.film_product3_section,
+.film_product4_section,
+.film_product5_section,
+.film_product6_section,
+.film_product7_section {
+    box-sizing: border-box;
+    height: 26vmin;
+    width: 26vmin;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    margin: 6% 0%;
+}
+
+.container1:hover {
+    animation-play-state: paused;
+}
+
+.Products_Animated_Film:hover {
+    overflow: auto;
+}
+
+.Products_Animated_Film:hover::-webkit-scrollbar {
+    display: none;
+}
+
+.film_product_img1,
+.film_product_img2,
+.film_product_img3,
+.film_product_img4,
+.film_product_img5,
+.film_product_img6,
+.film_product_img7 {
+    margin: 2%;
+    width: 95%;
+    height: 80%;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+#img1_pic,
+#img2_pic,
+#img3_pic,
+#img4_pic,
+#img5_pic,
+#img6_pic,
+#img7_pic {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+}
+
+#img_text1,
+#img_text2,
+#img_text3,
+#img_text4,
+#img_text5,
+#img_text6,
+#img_text7 {
+    font-size: 3vmin;
+    font-family: 'Comic Neue', cursive;
+    color: rgb(34, 34, 34);
+    line-height: 90%;
+}
+
+@media (width<=1000px) {
+    .container1 {
+        animation-name: none;
+    }
+
+    .film_product1_section,
+    .film_product2_section,
+    .film_product3_section,
+    .film_product4_section,
+    .film_product5_section,
+    .film_product6_section,
+    .film_product7_section {
+        height: 22vmin;
+        width: 22vmin;
+        margin-right: 15%;
+    }
+
+    .before {
+        flex-wrap: wrap;
+    }
+
+    .after {
+        flex-wrap: wrap;
+        left: 180vw;
+    }
+
+    #img1_pic,
+    #img2_pic,
+    #img3_pic,
+    #img4_pic,
+    #img5_pic,
+    #img6_pic,
+    #img7_pic {
+        border-radius: 7px;
+    }
+
+    .film_product1_grayscale,
+    .film_product2_grayscale,
+    .film_product3_grayscale,
+    .film_product4_grayscale,
+    .film_product5_grayscale,
+    .film_product6_grayscale,
+    .film_product7_grayscale {
+        border-radius: 7px;
+        font-size: 2.7vmin;
+    }
+}
+
+.film_product1_grayscale,
+.film_product2_grayscale,
+.film_product3_grayscale,
+.film_product4_grayscale,
+.film_product5_grayscale,
+.film_product6_grayscale,
+.film_product7_grayscale {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+    border-radius: 10px;
+    transition: all 0.25s linear 0s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.film_product1_grayscale:hover,
+.film_product2_grayscale:hover,
+.film_product3_grayscale:hover,
+.film_product4_grayscale:hover,
+.film_product5_grayscale:hover,
+.film_product6_grayscale:hover,
+.film_product7_grayscale:hover {
+    opacity: 0.5;
+}
+
+.film_product1_section,
+.film_product2_section,
+.film_product3_section,
+.film_product4_section,
+.film_product5_section,
+.film_product6_section,
+.film_product7_section {
+    transition: all 0.25s linear 0s;
+}
+
+.film_product1_section:hover,
+.film_product2_section:hover,
+.film_product3_section:hover,
+.film_product4_section:hover,
+.film_product5_section:hover,
+.film_product6_section:hover,
+.film_product7_section:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+.High_Gurantee,
+.Most_Rated {
+    background: radial-gradient(circle, rgba(255, 230, 230, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 244, 244, 1) 27%, rgba(255, 243, 243, 1) 44%, rgba(255, 244, 244, 1) 50%, rgba(177, 177, 177, 0.7484243697478992) 86%, rgba(177, 177, 177, 0.7372198879551821) 86%, rgba(190, 188, 188, 0.8800770308123249) 94%);
+    opacity: 0.6;
+    margin: 1vmin 0px;
+    height: auto;
+    width: 99%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+#High_Gurantee_text,
+#Most_Rated_text {
+    font-size: 3vmin;
+    font-family: 'Comic Neue', cursive;
+    letter-spacing: 2px;
+    color: black;
+    padding: 10px;
+}
+
+
+
+body {
+    -webkit-tap-highlight-color: transparent;
+}

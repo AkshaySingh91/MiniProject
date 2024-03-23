@@ -1,0 +1,51 @@
+
+// logic for listing product without grid using length of product array
+<section class="motor_item_section"> 
+<% let l= parseInt(productSmallDetail.length/5)  , pi=0%>
+    <% if((productSmallDetail.length%5) != 0) l++%>
+
+        <% for (let currlvl=0; currlvl < l; currlvl++) { %>
+            <div class="motor_section_level<%= currlvl+1 %>">
+                <% let n %> 
+                <% if(currlvl == l-1){%> 
+                    <% if ((productSmallDetail.length % 5) != 0){%>
+                        <%n = (productSmallDetail.length % 5) %>
+                    <%}else{%>
+                        <% n = 5%> 
+                        <%}%>
+                <%}else{%> 
+                    <% n = 5%> 
+                <%}%> 
+                <% for (let i=0; i < n; i++) { %>
+                    <a href="">
+                        <div class="motor_section_Product">
+                            <div class="film_product_img">
+                                <img src="<%= productSmallDetail[pi].productImage[0] %>" alt="Product Image"
+                                    class="product_image">
+                            </div>
+                            <div class="text_heading">
+                                <span>
+                                    <%= productSmallDetail[pi].title %>
+                                </span>
+                            </div>
+                            <div class="product_rating">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <!-- <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span> -->
+                            </div>
+                            <div class="product_price">
+                                <span>&#x20B9; <%= productSmallDetail[pi].price %></span>
+                            </div>
+                        </div>
+                    </a>
+                    <% } %> 
+            </div>
+            <% } %>
+</section>
+
