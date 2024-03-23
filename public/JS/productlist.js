@@ -102,7 +102,7 @@ document.querySelector(".pagination").addEventListener('click', (e)=>{
         .catch((err) => {console.log(err.message);})
     }        
 }) 
-admin can add categories, seller can list product, product list page has divided in different page(pagination)  
+
 document.addEventListener('DOMContentLoaded', (e)=>{
     // we selected first page as default 
     document.querySelector("#leftSidePage").nextElementSibling
