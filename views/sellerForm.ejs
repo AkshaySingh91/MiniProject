@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/CSS/sellerForm.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="http    s://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1 id="welcome">Welcome on Seller page</h1>
+
+    <div class="container">
+        <h2 id="inst">Submit details to list Product</h2>
+
+        <form action="/seller/form" method="post"  enctype="multipart/form-data">
+ 
+            <label for="getParentCategory">Parent-Category</label>
+            <select   name="getParentCategory" id="getParentCategory">
+                <option value="none" selected> None </option>
+                <% for(let i=0; i<allSec.length; i++){ %>
+                    <option value="<%= allSec[i]._id %>">
+                        <%= allSec[i].name %>
+                    </option>
+                    <% } %>
+            </select>
+            <div class="catPath catPathToogle"></div>
+            <div  class="title">
+                <label for="title">Title</label>
+                <input required name="title" id="title" type="text" maxlength="20">
+            </div>
+            <div class="price">
+                <label required for="price">Price</label>
+                <input required name="price" id="price" type="number" min="0" maxlength="20">
+            </div>
+            <div class="description">
+                <label for="description">Description</label>
+                <textarea required name="description" id="description" cols="70" rows="3" maxlength="50"></textarea>
+            </div>
+            <div class="gurrantee">
+                <label for="gurrantee">Gurrantee</label>
+                <input name="gurrantee" id="gurrantee" type="number" min="0" >
+            </div>
+            <div class="quantity">
+                <label for="quantity">Quantity</label>
+                <input name="quantity" id="quantity" type="text"  >
+            </div>
+            <div class="constSpecificationToogle  constSpecification"> </div>
+            <div class="defineSpecification">
+                <div class="state">
+                    <h3>Want to set any specific Specification eg: size : 10cm</h3>
+                    <label id="specLable" for="yes">Yes</label>
+                    <input value="yes" type="radio" name="anySpec" id="yes">
+                    <label id="specLable" for="no">No</label>
+                    <input value="no" type="radio" name="anySpec" id="no">
+                </div>
+            </div>
+
+            <div class="files">
+                <div class="uploadSectionImage">
+                    <span id="instruct">Click or Drop Product image here</span>
+                    <input name="productImage" class="uploadSectionImage" type="file" multiple>
+                </div>
+                <div class="uploadQRImage">
+                    <span id="instruct">Click or Drop QR code here</span>
+                    <input name="qrcode" class="getQRImage" type="file" multiple>
+                </div>
+                <input class="" type="submit">
+            </div>
+            
+    </div>
+
+    </form> 
+</body>
+<script src="/JS/sellerForm.js"></script>
+
+</html>

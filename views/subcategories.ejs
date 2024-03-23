@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/subcategories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=IBM+Plex+Serif:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <%- include("includes/header") %>
+        <main>
+            <section>
+                <div class="resistor_section">
+                    <div class="resistor_section_container1">
+                        <%for(let i=0; i<allSubCat.length; i++){%>
+                            <div class="resistor_section_Product<%=i+1%>">
+                                <a href="/<%=allSubCat[i].wholepath%>%>">
+                                    <div class="film_product_img<%=i+1%>">
+                                        <div class="img_wrap<%=i+1%>">
+                                            <img src="<%=allSubCat[i].imgPath%>" alt="" id="img<%=i+1%>_pic">
+                                            <div class="film_product<%=i+1%>_grayscale"></div>
+                                        </div>
+                                        <div class="text<%=i+1%>_heading">
+                                            <span>
+                                                <%= allSubCat[i].name %>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="Text<%=i+1%>">
+                                    <div class="about_product<%=i+1%>">
+                                        <button><span>Know Then Buy</span></button>
+                                    </div>
+                                    <div class="price_range<%=i+1%>">
+                                        <span>&#x20B9;20 - &#x20B9;500</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <%}%>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </main>
+
+
+
+        <%- include('includes/footer') %>
+
+</body>
+
+</html>

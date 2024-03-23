@@ -1,0 +1,205 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 65.5%;
+}
+body {
+    width: 100%;
+    height: 100vmin;
+    display: flex;
+}
+:root {
+    --brd: 1px solid black;
+    --heading-fnt: "Montserrat", sans-serif;
+    --para-fnt: "Cabin", sans-serif;
+}
+.cartElementCol{
+    margin: 1.5rem 2rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+}
+div[class^="item"] {
+    border: var(--brd);
+    height: 15rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+div[id^="image"] {
+    border: var(--brd);
+    height: 12rem;
+    width: 15rem;
+    margin: 1rem 1.5rem;
+}
+div[id^="image"] a{
+    height: 100%;
+    width: 100%;
+}
+div[id^="image"] img{
+    height: 100%;
+    width: 100%;    
+}
+
+div[class^="textCol"]{
+    /* item height = 30vmin */
+    height: 100%;
+    /* img + text = 25vmin + 60vmin */
+    width: 35rem;      
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+div[id^="decript"]{
+    text-align: justify;
+    font-family: var(--para-fnt);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    /* line-height: 1rem; */
+}
+div[id^="price"]{
+    text-align: justify;
+    font-family: var(--para-fnt);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+div[class^="sellerInfo"]{
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-flow: column;
+}
+div[class^="sellerInfo"] div[id^="name"], div[class^="sellerInfo"] div[id^="loc"] {
+    text-align: justify;
+    font-family: var(--para-fnt);
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.fixed{
+    /* position: relative; */
+    /* border: var(--brd); */
+    height: auto;
+    width: auto;
+}
+.totalPriceCol{
+    border: var(--brd);
+    margin: 1.5rem 2rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    position: fixed;
+    top: 0;
+    /* right: 0%; */
+}
+.totalPriceCol h1{
+    width: 25vmin;
+    font-family: var(--heading-fnt);
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+.selectedName{
+    width: 100%;
+}
+article[id^="productOnCounter"], #totalPrice{
+    /* border: var(--brd); */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--heading-fnt);
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.totalPriceCol span{
+    margin: 0 3rem;
+}
+.totalPriceCol a{
+    align-self: center;
+}
+#buyAll{
+    height: 3rem;
+    width: 15rem;
+    border-radius: 1rem;
+    font-family: var(--para-fnt);
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+@media(width <= 900px){
+    body{
+        flex-flow: column;
+    }
+    .totalPriceCol{
+        position: static;
+    }
+}
+
+
+
+
+
+/* Different Page */
+.emptyCart{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+}
+.box{
+    border: var(--brd);
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.box h1{
+    border: var(--brd);
+    height: fit-content;
+    width: fit-content;
+    font-family: var(--heading-fnt);
+    font-weight: normal;
+    font-size: 3.5rem;
+    margin: 2rem 2rem ;
+    text-align: center;
+    padding: 0 5vmin;
+    border-bottom: 3px solid red;
+}
+.box h2{
+    border: var(--brd);
+    border-radius: 1rem;
+    font-family: var(--para-fnt);
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem 3rem ;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+}
+.box input{
+    height: 3rem;
+    width: 10rem;
+    font-family: var(--heading-fnt);
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+

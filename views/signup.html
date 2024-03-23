@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electroshare://signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/CSS/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form name="form" method="get" action="http://localhost:3000/register"> 
+            <div class="input">
+                <div id="text">
+                    <input name="firstname" id="firstname" type="text" required>
+                    <label for="firstname">Firstname</label>
+                    <span></span>
+                </div>
+                <div id="text">
+                    <input name="lastname" id="lastname" type="text" required>
+                    <label for="lastname">Lastname</label>
+                    <span></span>
+                </div>
+
+                <div id="text">
+                    <input name="Email-ID" id="Email-ID" type="email" required>
+                    <label for="Email-ID">Email-ID</label>
+                    <span></span>
+                </div>
+
+                <div id="text">
+                    <input name="Password" id="Password" type="password" required>
+                    <label for="Password">Password</label>
+                    <img id="openEye" src="../allWebImageStock/eye.svg" alt="">
+                    <span></span>
+                </div>
+                <div id="text">
+                    <input id="confirmPassword" type="password" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <span></span>
+                </div>
+     
+                <div>
+                    <input type="submit" value="Signup">
+                </div>
+                <div class="login_link">
+                    Already have an account? <a href="/login">Login</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="./signup.js"></script>
+</body>
+
+</html>

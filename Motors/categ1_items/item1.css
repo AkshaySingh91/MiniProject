@@ -1,0 +1,153 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    height: 100vmin;
+}
+
+:root {
+    --brd: 1px solid black;
+    --heading-fnt: "Montserrat", sans-serif;
+    --para-fnt: "Cabin", sans-serif;
+}
+
+main {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    grid-template-columns: 2fr 2fr;
+    /* grid-template-rows: 1fr; */
+    column-gap: 0%;
+}
+
+.leftSection {
+    border: var(--brd);
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    margin: 4vmin 1vmin;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+
+.itemImage {
+    border: var(--brd);
+    width: 80vmin;
+    height: 60vmin;
+    margin-bottom: 2vmin;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.title {
+    border: var(--brd);
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.descript {
+    border: var(--brd);
+    width: 80vmin;
+    height: 50vmin;
+    /* margin: auto; */
+    text-align: justify;
+}
+
+.rightSection {
+    border: var(--brd);
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    margin: 4vmin 1vmin;
+    /* grid-template-rows: auto auto auto; */
+}
+
+.avgPrice {
+    border: var(--brd);
+    width: 80vmin;
+    height: 15vmin;
+    /* margin: auto; */
+    display: flex;
+}
+
+.avgPrice p {
+    font-size: 150%;
+    font-family: var(--para-fnt);
+    margin: 3vmin 2vmin;
+}
+
+.buttons {
+    border: var(--brd);
+    width: 80vmin;
+    height: 20vmin;
+    /* margin: auto; */
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+#cartButton,
+#buyButton {
+    width: 30vmin;
+    height: 7vmin;
+    border-radius: 4vmin;
+    margin: 2vmin 1vmin;
+    font-size: 120%;
+}
+
+.itemImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.title span {
+    font-size: 160%;
+    font-weight: 500;
+    font-family: var(--heading-fnt);
+}
+
+.descript p {
+    font-size: 150%;
+    font-family: var(--para-fnt);
+    font-weight: 500;
+}
+
+.sellerList{
+    /* border: var(--brd); */
+    width: 80vmin;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#allSellerHeading ul li, #motorSeller1 ul li{ 
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+#allSellerHeading ul, #motorSeller1 ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#allSellerHeading{
+    margin-bottom: 3%;
+    font-size: 140%;
+    font-family: var(--heading-fnt);
+}
+#motorSeller1 ul{
+    font-size: 110%;
+    font-family: var(--para-fnt);
+    padding: 1vmin;
+    /* outline: 1px solid black; */
+}

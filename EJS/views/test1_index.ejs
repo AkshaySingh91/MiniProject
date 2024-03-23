@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border: 2px solid black;
+            min-width: 300px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All user avaailable in database </h1>
+    <h2><a href="/registration">Create User</a> </h2>
+    <div class="box">
+        <table>
+            <thead>
+                <th>No.</th>
+                <th>Name</th>
+                <th>email</th>
+                <th>Id</th>
+            </thead>
+            <tbody>
+                <% for(let i=0; i<data.length; i++){ %>
+                    <tr>
+                        <td>
+                            <%= i+1 %>
+                        </td>
+                        <td>
+                            <%= data[i].uname %>
+                        </td>
+                        <td>
+                            <%= data[i].email%>
+                        </td>
+                        <td>
+                            <%= data[i].id%>
+                        </td>
+                        <td>
+                            <a href="/<%= data[i].id %>/edit/">Edit Profile</a>
+                        </td>
+                        <td>
+                            <a href="/<%= data[i].id %>/delete/">Delete </a>
+                        </td>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

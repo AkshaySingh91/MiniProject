@@ -1,0 +1,325 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --brd: 1px solid black;
+    --heading-fnt: "Montserrat", sans-serif;
+    --para-fnt: "Cabin", sans-serif;
+}
+
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    font-family: var(--heading-fnt);
+    font-weight: 400;
+    padding-top: 2vmin;
+    font-size: 4vmin;
+}
+h2{
+    text-align: center;
+    font-family: var(--para-fnt);
+    font-weight: 400;
+    padding-bottom: 4vmin;
+
+}
+form {
+    margin-top: 20px; 
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--heading-fnt);
+} 
+input[type="text"],
+select {
+    border: var(--brd);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5% ;
+    font-family: var(--para-fnt);
+    font-size: 110%;
+    cursor: pointer;
+
+}
+  
+.files{
+    /* border: 2px solid black;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div[class $= 'Image'], .dragOver{
+    border: 3px dashed #ccc;
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    padding: 1%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-align: center;    
+}
+div[class $= 'Image']:hover{
+    border-color: rgb(80, 80, 237);
+}
+input[class $= 'Image']{
+    display: none;    
+}
+
+span[id ^= 'instruct']{
+    font-size: 3.5vmin;
+    font-family: var(--heading-fnt);
+    text-align: center;
+    color: #777;
+}
+
+.dragOver{
+    border: 3px solid rgb(80, 80, 237);
+    border-radius: 10px;
+}
+.thumbnail{
+    height: 100%;
+    width: 100%;
+    background-color: #cccccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.thumbnail #title{
+    content: attr(data-lable);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 90%;
+    font-family: var(--para-fnt);
+    text-align: center;
+    background-color: #676565;
+    color: white;
+}
+
+
+#alert{
+    text-align: center;
+    font-family: var(--para-fnt);
+    color: rgb(225, 109, 109);
+    background-color: rgb(243, 198, 198);
+    font-weight: 400;
+    padding: 2vmin;
+    font-size: 3vmin;
+}
+#specLable{
+    display: inline;
+    margin: auto;  
+}
+input[type="radio"]{
+    display: inline;
+    border: 2px solid black;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.specification .specField { 
+    height: 2rem;
+    width: 7rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    box-sizing: border-box; 
+}
+.specification .specField input[type="text"]{
+    display: inline;
+    height: 100%;
+    width: 80%;
+    padding: 0;
+    margin-left: 5%;
+}
+
+.specification{
+    margin-bottom: 5%;
+}
+.state h3{
+    margin-bottom: 2%;
+}
+
+#getParentCategory{
+    display: block;
+    margin-bottom: 2%;
+}
+.catPath{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 4%;
+    background-color: #dcdbdb58; 
+    border-radius: .8rem;
+    min-height: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.selectedCategories{ 
+    height: 100%;
+    border:  1px solid #bbb9b9;
+    border-radius: .8rem;
+    font-size: 100%;
+    padding: 1%;
+    font-family: var(--para-fnt);
+    margin-right: 3%;
+}
+.price input,.gurrantee input { 
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5% ;
+    font-family: var(--para-fnt);
+    font-size: 110%;
+    cursor: pointer;
+}
+.description textarea{
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--para-fnt);
+    font-size: 110%;
+    cursor: pointer;
+    margin-bottom: 5% ;
+}
+.constSpecificationToogle{ 
+    width: 100%;
+    border: 1px solid #ccc;
+    /* display: flex;
+    align-items: center;  */
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+
+.constSpecificationToogle label{
+    display: inline;
+    margin-top: 0;
+}
+.constSpecificationToogle input{
+    padding: 0;
+    margin-top: auto;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 7rem;
+    max-height: 2rem;
+}
+.constSpecificationToogle h3{
+    font-family: var(--para-fnt);
+    font-size: 120%;
+    font-weight: normal;
+    margin-bottom: 3%;
+}
+.keyPair{
+    border: 1px solid #cccccc;
+    border-radius: .7rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.keyPair .partition{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.keyPair .specField{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.specField .key, .specField .value{
+    width: 40%; 
+    margin-top: 3%;
+    margin-bottom: 1.5%;
+    align-items: center;
+    border: var(--brd);
+} 
+.defineSpecification{ 
+    width: 100%;
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: .7rem;
+    border-radius: .7rem;
+}
+
+.state h3 { 
+    font-family: var(--para-fnt);
+    font-size: 120%;
+    font-weight: normal;
+    margin-bottom: 3%;
+}
+.keyPair .partition h3{ 
+    display: inline;
+    font-size: 110%;
+    font-family: var(--heading-fnt);
+    font-weight: normal;
+    padding-bottom: 5% ;
+    padding: 0 10%;
+    margin: 0 auto; 
+}
+button[value="Add"]{
+    display: block;
+    margin: 1rem 0;
+    min-height: 1.5rem;
+    min-width: 2 rem;
+    font-size: 110%;
+    font-family: var(--heading-fnt);
+    padding: 1%;
+}
+.deleteField{  
+    cursor: pointer; 
+    align-self:center;
+    font-size: 150%;
+}
+input[type="submit"]{
+    max-width: 10rem;
+    max-height: 10rem;
+    font-family: var(--heading-fnt);
+    padding: 1%; 
+}
+.gurrantee, .quantity{
+    box-sizing: border-box;
+    /* padding: 5%; */
+    margin-right:  5%;
+    margin-bottom:  3%; 
+    display: inline-block;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./item1.css" />
+
+  </head>
+  
+  <body>
+    <main>
+      <div class="leftSection">
+        <div class="itemImage">
+          
+          <img id="motorItem1" src="/Web Development/MiniProject/allWebImageStock/100K-Resistor-1024x427.jpg"alt=""/>
+          <div class="title">
+            <span>Brushless Motor</span>
+          </div>
+        </div>
+        <div class="descript">
+          <p>
+            Storite UPort 1.8 Meter 3 Pin Laptop Power Cable Cord Universal AC
+            Replacement Power Cord for Laptop (Black)
+          </p>
+        </div>
+      </div>
+
+      <div class="rightSection">
+        <div class="avgPrice">
+            <p>
+                Avg-Price:   
+                <span id="min-price">100</span>-<span id="max-price">300</span>
+                <span> &#8377; </span>
+            </p>
+        </div>
+
+        <div class="buttons">
+            <input id="cartButton" value="Add to Cart"type="button">
+            <input id="buyButton" value="Buy now" type="button">
+        </div>
+        
+        <div class="sellerList">
+              <input id="isMotor1Selected" type="checkbox" style="display: none;">
+              <div id="allSellerHeading">
+                <!-- constant -->
+                <ul><li id="name">Name</li>
+                  <li>Price</li>
+                  <li>Location</li>
+                  <li>Gurrantee</li></ul>
+              </div>
+              <div id="motorSeller1">
+                <ul id="motorSeller1Details"><li id="motorSeller1Name">Rahulsd</li>
+                    <li id="motorSeller1Price">100</li>
+                    <li id="motorSeller1Loc">rajnagar</li>
+                    <li id="motorSeller1Gurrantee">3 mon</li>
+                </ul>
+              </div>
+          </div>
+      </div>
+    </main>
+  </body>
+  <script src="/Web Development/MiniProject/index.js"></script>
+  <script src="./item1.js"></script>
+</html>

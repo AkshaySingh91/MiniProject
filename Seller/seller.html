@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./seller.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1 id="welcome">Welcome on seller page</h1>
+
+    <div class="container">
+        <h2>Fill some details to Sell your Product</h2>
+
+        <form action="">
+            <label for="getSellerCategory">Select Category</label>
+            <select name="getSellerCategory" id="getSellerCategory">
+                <option value="Motor">Motor</option>
+                <option value="Register">Register</option>
+                <option value="LED">LED</option>
+                <option value="Integrated-Circuit">Integrated-Circuit</option>
+            </select>
+
+            <label for="getItemPrice">Enter Selling Price </label>
+            <input id="getProductPrice" type="number">
+
+            <label for="getSellerDescript">Write Description of your product</label>
+            <input id="getProductDecript" type="text">
+
+            <div class="files">
+                <div class="uploadProductImage">
+                    <span id="instruct">Click or Drop Product image here</span>
+                    <input class="getProductImage" type="file" multiple>
+                </div>
+                
+                <div class="uploadQRImage">
+                    <span id="instruct">Click or Drop QR code here</span>
+                    <input class="getQRImage" type="file">
+                </div>
+            </div>
+    </div>
+
+    </form>
+
+</body>
+<script src="./seller.js"></script>
+
+</html>
